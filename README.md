@@ -6,7 +6,7 @@ DevFest GDGoC Japan Hackathon 2026（カテゴリ: エンターテインメン�
 |---|---|
 | **Chrome 拡張機能（パソコン。SNS も遮る）** | [GitHub Releases v1.0.0](https://github.com/Devfest-Hackathon-2026/df-2026-t145/releases/tag/v1.0.0) の `lumo_extension.zip` |
 | **Web 版（iPhone など。タイマーと報告のみ）** | https://avatar-api-ek3vs4df7q-an.a.run.app |
-| ソースコード（開発用リポジトリ） | https://github.com/teikaiyu/goo-gaa-project |
+| ソースコード | このリポジトリの [`src/`](src/)（開発用リポジトリ https://github.com/teikaiyu/goo-gaa-project の提出時点のコピー。開発の詳しい説明は [`src/README.md`](src/README.md)） |
 | プライバシーポリシー | https://github.com/teikaiyu/goo-gaa-project/blob/main/PRIVACY.md |
 
 ## 課題
