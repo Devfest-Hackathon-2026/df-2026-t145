@@ -11,7 +11,7 @@
 set -euo pipefail
 
 : "${GCP_PROJECT:?set GCP_PROJECT to your Google Cloud project id}"
-REPO="${REPO:-teikaiyu/goo-gaa-project}"     # only this GitHub repo may deploy
+REPO="${REPO:?set REPO to owner/name of the GitHub repo}"     # only this GitHub repo may deploy
 RUNTIME_SA="${RUNTIME_SA:-avatar-api-sa@${GCP_PROJECT}.iam.gserviceaccount.com}"
 DEPLOY_SA_NAME="github-deployer"
 DEPLOY_SA="${DEPLOY_SA_NAME}@${GCP_PROJECT}.iam.gserviceaccount.com"

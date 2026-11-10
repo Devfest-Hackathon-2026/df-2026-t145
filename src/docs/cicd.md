@@ -25,7 +25,7 @@ main にマージ ──▶ テスト ──▶ アプリのビルド ──▶ 
 
 ## 鍵を GitHub に置かない（Workload Identity Federation）
 
-GitHub は、実行のたびに「これは teikaiyu/goo-gaa-project の main の実行です」という短命の身分証（OIDC トークン）を発行する。
+GitHub は、実行のたびに「これはこのリポジトリの main の実行です」という短命の身分証（OIDC トークン）を発行する。
 Google Cloud はそれを確認し、デプロイ専用のサービスアカウント（`github-deployer`）として 1 時間だけ動くことを許す。
 
 - サービスアカウントの鍵ファイルを作らないので、漏れる鍵がない。

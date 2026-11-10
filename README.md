@@ -6,8 +6,8 @@ DevFest GDGoC Japan Hackathon 2026（カテゴリ: エンターテインメン�
 |---|---|
 | **Chrome 拡張機能（パソコン。SNS も遮る）** | [GitHub Releases v1.0.0](https://github.com/Devfest-Hackathon-2026/df-2026-t145/releases/tag/v1.0.0) の `lumo_extension.zip` |
 | **Web 版（iPhone など。タイマーと報告のみ）** | https://avatar-api-ek3vs4df7q-an.a.run.app |
-| ソースコード | このリポジトリの [`src/`](src/)（開発用リポジトリ https://github.com/teikaiyu/goo-gaa-project の提出時点のコピー。開発の詳しい説明は [`src/README.md`](src/README.md)） |
-| プライバシーポリシー | https://github.com/teikaiyu/goo-gaa-project/blob/main/PRIVACY.md |
+| ソースコード | このリポジトリの [`src/`](src/)（開発の詳しい説明は [`src/README.md`](src/README.md)） |
+| プライバシーポリシー | [`src/PRIVACY.md`](src/PRIVACY.md) |
 
 ## 課題
 スマホやパソコンの SNS（Instagram / X / YouTube）を、つい開いてしまう。開く理由の多くは「見逃したくない」という気持ちで、
@@ -102,7 +102,7 @@ Lumo の画面に差し替える）なので同じように動く想定だが、
 - Gemini には「渡された動画だけで話す」よう指示しており、存在しない動画を作らない。動画の文章はデータとして扱い、指示としては読まない。
 - 報告の API は鍵なしで呼べる（拡張機能やアプリに鍵を入れて配ると、もう秘密ではないため）。代わりに、Gemini を呼ぶ回数に 1 日の上限を
   設けて費用の上限を決めている。上限を超えると、Lumo は見つけた動画をコメントなしで並べる。
-- 詳しくは[プライバシーポリシー](https://github.com/teikaiyu/goo-gaa-project/blob/main/PRIVACY.md)。
+- 詳しくは[プライバシーポリシー](src/PRIVACY.md)。
 
 ## 今の限界
 - 遮れるのはパソコンの Chrome（と Chromium 系のブラウザ）の Web 版 SNS だけ。iPhone のアプリと Safari を遮るには、ネイティブ iOS アプリ
